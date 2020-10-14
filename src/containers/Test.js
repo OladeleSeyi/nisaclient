@@ -23,6 +23,7 @@ export default function Test() {
   useEffect(() => {
     async function loadTest() {
       const url = `/labs/test/${id}`;
+      console.log(url);
       const request = await fetch(url);
       const test = await request.json();
       console.log(test);
@@ -52,7 +53,7 @@ export default function Test() {
         "Content-Type": "application/json",
       },
     };
-    let url = `/labs/test/${id}`;
+    let url = `https://nisalabs.herokuapp.com/labs/test/${id}`;
     console.log(url);
     try {
       let request = await fetch(url, fetchOptions);
