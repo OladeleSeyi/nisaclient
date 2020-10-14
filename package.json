@@ -20,6 +20,7 @@
     "eject": "react-scripts eject"
   },
   "proxy": "https://nisalabs.herokuapp.com/",
+  "homepage": ".",
   "eslintConfig": {
     "extends": "react-app"
   },
