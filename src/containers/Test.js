@@ -22,7 +22,7 @@ export default function Test() {
 
   useEffect(() => {
     async function loadTest() {
-      const url = `/labs/test/${id}`;
+      const url = `https://nisalabs.herokuapp.com/labs/test/${id}`;
       console.log(url);
       const request = await fetch(url);
       const test = await request.json();

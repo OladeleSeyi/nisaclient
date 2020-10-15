@@ -25,7 +25,7 @@ export default function NewTest() {
         "Content-Type": "application/json",
       },
     };
-    let url = "/labs/test";
+    let url = "https://nisalabs.herokuapp.com/labs/test";
     try {
       let request = await fetch(url, fetchOptions);
       if (request.status === 200) {

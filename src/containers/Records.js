@@ -28,7 +28,7 @@ export default function Record() {
   }
   const getTests = async (data) => {
     // Data here represents whether or not we want to get all notes or just some of them
-    let url = "/labs/tests";
+    let url = "https://nisalabs.herokuapp.com/labs/tests";
     try {
       const request = await fetch(url);
       const response = await request.json();
